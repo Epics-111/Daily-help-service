@@ -1,1 +1,2 @@
-node_modules
+daily-help-service/node_modules/
+.vscode/

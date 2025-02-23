@@ -1,20 +1,20 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 import AppRoutes from "./routes/AppRoutes";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import "./index.css";
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <Header />
-      <main>
+    <div className="bg-gray-100 min-h-screen">
+      <header className="bg-blue-500 text-white p-4 text-center text-xl font-bold">
+        Daily Help Services
+      </header>
+      <main className="p-4">
         <AppRoutes />
       </main>
-      <Footer />
-    </Router>
+      <footer className="bg-blue-500 text-white p-4 text-center mt-10">
+        &copy; 2025 Daily Help Services. All rights reserved.
+      </footer>
+    </div>
   );
-}
+};
 
 export default App;
